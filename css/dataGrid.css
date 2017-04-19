@@ -1,0 +1,30 @@
+/*******************************************
+ * File Name : dataGrid.css
+ * Author : May
+ * Create Date : 2017/4/13
+ * Description :
+ ******************************************/
+
+table{
+    border-collapse: collapse
+}
+
+.t-container{
+    position: relative;
+    clear: both;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    height: 420px;
+    overflow: auto;
+}
+
+.t-container table{
+    width: 100%;
+}
+
+td,th{
+    padding: 8px;
+    border: 1px solid #dddddd;
+}

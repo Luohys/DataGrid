@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dev-demo</title>
+
+    <link rel="stylesheet" href="css/dataGrid.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/dataGrid.js"></script>
+</head>
+<body>
+<div id="dataGrid"></div>
+</body>
+</html>
+<script>
+    $("#dataGrid").dataGrid({
+      columns:[
+        {
+          text:"序号",
+          property:"UserID"
+        },
+        {
+          text:"客户编码",
+          property:"UserCode"
+        },
+        {
+          text:"客户姓名",
+          property:"UserName"
+        },
+        {
+          text:"状态",
+          property:"UserStatus"
+        },
+        {
+          text:"手机号码",
+          property:"PhoneNumber"
+        },
+        {
+          text:"备注",
+          property:"Remarks"
+        }
+      ],
+      data:"data.json"
+    });
+</script>
